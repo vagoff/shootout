@@ -10,3 +10,5 @@ pypy loop3.py2 50999
 pypy3 loop3.py3 50999
 #python2 facloop.py2 50999
 #python3 facloop.py3 50999
+nim c facrec.nim && ./facrec 7
+nim c loop3.nim && ./loop3 100
