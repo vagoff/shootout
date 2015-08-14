@@ -1,0 +1,15 @@
+[vag@big18 shootout]$ ./everything.sh
+[
+{ "command": "pypy facloop.py2 50999", "time": 2.38, "memory": 76056 }
+{ "command": "pypy3 facloop.py3 50999", "time": 2.53, "memory": 50228 }
+{ "command": "ghc -O3 facrec.hs && ./facrec 50999", "time": 1.42, "memory": 67532 }
+{ "command": "julia facrec.jl", "time": 14.94, "memory": 87988 }
+{ "command": "pypy facrec.py 50999", "time": 17.67, "memory": 105472 }
+{ "command": "pypy3 facrec.py 50999", "time": 18.70, "memory": 82444 }
+{ "command": "#loop3invalid.jl", "time": 0.00, "memory": 3032 }
+{ "command": "julia loop3.jl", "time": 340.36, "memory": 111304 }
+{ "command": "pypy loop3.py2 50999", "time": 3.28, "memory": 51600 }
+{ "command": "pypy3 loop3.py3 50999", "time": 6.44, "memory": 29452 }
+{ "command": "#python2 facloop.py2 50999", "time": 0.00, "memory": 3032 }
+{ "command": "#python3 facloop.py3 50999", "time": 0.00, "memory": 2976 }
+]
