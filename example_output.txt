@@ -12,8 +12,8 @@
 { "command": "pypy3 loop3.py3 50999", "time": 6.44, "memory": 29452 }
 { "command": "#python2 facloop.py2 50999", "time": 0.00, "memory": 3032 }
 { "command": "#python3 facloop.py3 50999", "time": 0.00, "memory": 2976 }
-{ "command": "nim c facrec.nim && ./facrec 7", "time": 1.05, "memory": 32620 },
+{ "command": "nim c facrec.nim && ./facrec 20", "time": 1.05, "memory": 32620 },
 { "command": "nim c loop3.nim && ./loop3 100", "time": 8.18, "memory": 18468 },
-{ "command": "nim c -d:release facrec.nim && ./facrec 7", "time": 2.29, "memory": 40064 },
+{ "command": "nim c -d:release facrec.nim && ./facrec 20", "time": 2.29, "memory": 40064 },
 { "command": "nim c -d:release loop3.nim && ./loop3 100", "time": 0.54, "memory": 19496 },
 ]
