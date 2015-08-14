@@ -1,0 +1,16 @@
+Memory
+%M
+
+Maximum resident set size of the process during its lifetime, in Kbytes.
+
+%e
+
+(Not in tcsh.) Elapsed real time (in seconds).
+
+%S
+
+Total number of CPU-seconds that the process spent in kernel mode.
+
+%U
+
+Total number of CPU-seconds that the process spent in user mode

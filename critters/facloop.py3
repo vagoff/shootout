@@ -1,0 +1,10 @@
+import sys
+import math
+
+def fac(y):
+    r = 1
+    for x in range(2, y + 1):
+        r *= x
+    return r
+
+print(math.log10( fac(int(sys.argv[1])) ))

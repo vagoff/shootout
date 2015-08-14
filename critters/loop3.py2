@@ -1,0 +1,6 @@
+x = 0
+for i in xrange(1000):
+    for j in xrange(1000):
+        for k in xrange(100):
+            x += i * j * k
+print(x)
