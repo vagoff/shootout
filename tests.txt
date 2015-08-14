@@ -1,6 +1,10 @@
 pypy facloop.py2 50999
 pypy3 facloop.py3 50999
+
 ghc -O3 facrec.hs && ./facrec 50999
+ghc -O3 facrec-foldr.hs && ./facrec-foldr 50999
+ghc -O3 facrec-product.hs && ./facrec-product 50999
+
 julia facrec.jl
 pypy facrec.py 50999
 pypy3 facrec.py 50999
