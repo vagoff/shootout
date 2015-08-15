@@ -1,0 +1,130 @@
+[[measurement]]
+language = 'python'
+implementation = 'pypy2'
+function = 'fac'
+algorithm = 'fac-loop'
+run = 'pypy fac-loop.py2 50999'
+
+[[measurement]]
+language = 'python'
+implementation = 'pypy3'
+function = 'fac'
+algorithm = 'fac-loop'
+run = 'pypy3 fac-loop.py3 50999'
+
+[[measurement]]
+language = 'python'
+implementation = 'cpython2'
+function = 'fac'
+algorithm = 'fac-loop'
+run = 'python2 fac-loop.py2 50999'
+active = false
+
+[[measurement]]
+language = 'python'
+implementation = 'cpython3'
+function = 'fac'
+algorithm = 'fac-loop'
+run = 'python3 fac-loop.py3 50999'
+active = false
+
+[[measurement]]
+language = 'haskell'
+implementation = 'ghc'
+function = 'fac'
+algorithm = 'fac-rec'
+compile = 'ghc -O3 fac-rec.hs'
+run = './fac-rec 50999'
+clean = 'rm fac-rec.hi fac-rec.o'
+
+[[measurement]]
+language = 'haskell'
+implementation = 'ghc'
+function = 'fac'
+algorithm = 'fac-foldr'
+compile = 'ghc -O3 fac-foldr.hs'
+run = './fac-foldr 50999'
+clean = 'rm fac-foldr.hi fac-foldr.o'
+
+[[measurement]]
+language = 'haskell'
+implementation = 'ghc'
+function = 'fac'
+algorithm = 'fac-product'
+compile = 'ghc -O3 fac-product.hs'
+run = './fac-product 50999'
+clean = 'rm fac-product.hi fac-product.o'
+
+[[measurement]]
+language = 'julia'
+function = 'fac'
+algorithm = 'fac-rec'
+run = 'julia fac-rec.jl' # [!] compile to static executable! # [!] add an argument!
+
+[[measurement]]
+language = 'julia'
+function = 'loop3'
+algorithm = 'loop3'
+run = 'julia loop3.jl' # [!] compile to static executable! # [!] add an argument!
+
+[[measurement]]
+language = 'julia'
+function = 'loop3-i64'
+run = 'julia loop3-i64.jl' # [!] compile to static executable! # [!] add an argument!
+
+
+[[measurement]]
+language = 'python'
+implementation = 'pypy2'
+function = 'fac'
+algorithm = 'fac-rec'
+run = 'pypy fac-rec.py 50999'
+
+[[measurement]]
+language = 'python'
+implementation = 'pypy3'
+function = 'fac'
+algorithm = 'fac-rec'
+run = 'pypy3 fac-rec.py 50999'
+
+[[measurement]]
+language = 'python'
+implementation = 'pypy2'
+function = 'loop3'
+run = 'pypy loop3.py2 50999'
+
+[[measurement]]
+language = 'python'
+implementation = 'pypy3'
+function = 'loop3'
+run = 'pypy3 loop3.py3 50999'
+
+[[measurement]]
+language = 'nim'
+function = 'fac-i64'
+algorithm = 'fac-rec-i64'
+compile = 'nim c fac_rec_i64.nim'
+run = './fac_rec_i64 20'
+clean = 'rm -rf nimcache'
+
+[[measurement]]
+language = 'nim'
+function = 'fac-i64'
+algorithm = 'fac-rec-i64'
+compile = 'nim c -d:release fac_rec_i64.nim'
+run = './fac_rec_i64 20'
+clean = 'rm -rf nimcache'
+
+[[measurement]]
+language = 'nim'
+function = 'loop3-i64'
+compile = 'nim c loop3_i64.nim'
+run = './loop3_i64 100'
+clean = 'rm -rf nimcache'
+
+[[measurement]]
+language = 'nim'
+function = 'loop3-i64'
+compile = 'nim c -d:release loop3_i64.nim'
+run = './loop3_i64 100'
+clean = 'rm -rf nimcache'
