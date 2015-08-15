@@ -1,0 +1,10 @@
+[
+{ "language": "py", "build": "", "command": "pypy fac-loop.py2 50999", "time": 2.03, "memory": 76264 },
+{ "language": "py", "build": "", "command": "pypy3 fac-loop.py3 50999", "time": 2.08, "memory": 50540 },
+{ "language": "hs", "build": "", "command": "./fac-rec 50999", "time": 0.92, "memory": 6096 },
+{ "language": "hs", "build": "", "command": "./fac-rec 50999", "time": 0.92, "memory": 6140 },
+{ "language": "hs", "build": "", "command": "./fac-foldr 50999", "time": 1.00, "memory": 6148 },
+{ "language": "hs", "build": "", "command": "./fac-product 50999", "time": 2.82, "memory": 13236 },
+{ "language": "jl", "build": "", "command": "julia fac-rec.jl", "time": 14.70, "memory": 88588 },
+{ "language": "jl", "build": "", "command": "pypy fac-rec.py 50999", "time": 17.58, "memory": 105332 },
+{ "language": "jl", "build": "", "command": "pypy3 fac-rec.py 50999", "time": 18.55, "memory": 82620 },

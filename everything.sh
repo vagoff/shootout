@@ -1,12 +1,9 @@
 #!/usr/bin/env bash
-
 set -e
-
 ulimit -s 300999
-echo "["
-
-cat tests.txt | (cd critters; while read cmd; do
-bash -c "${cmd}"
+echo "[" > report.txt
+cat tests.txt | (cd critters; while read lng cmd; do
+lng="$lng" cmd="$cmd" bash -c "${cmd}"
 done)
-
-echo "]"
+echo "]" >> report.txt
+cat report.txt
