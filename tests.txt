@@ -1,20 +1,20 @@
-pypy facloop.py2 50999
-pypy3 facloop.py3 50999
+../t pypy facloop.py2 50999
+../t pypy3 facloop.py3 50999
+#../t python2 facloop.py2 50999
 
-ghc -O3 facrec.hs && ./facrec 50999
-ghc -O3 facrec-foldr.hs && ./facrec-foldr 50999
-ghc -O3 facrec-product.hs && ./facrec-product 50999
+ghc -O3 facrec.hs && ../t ./facrec 50999
+ghc -O3 facrec.hs && ../t ./facrec 50999
+ghc -O3 facrec-foldr.hs && ../t ./facrec-foldr 50999
+ghc -O3 facrec-product.hs && ../t ./facrec-product 50999
 
-julia facrec.jl
-pypy facrec.py 50999
-pypy3 facrec.py 50999
+../t julia facrec.jl
+../t pypy facrec.py 50999
+../t pypy3 facrec.py 50999
+../t julia loop3.jl
 #loop3invalid.jl
-julia loop3.jl
-pypy loop3.py2 50999
-pypy3 loop3.py3 50999
-#python2 facloop.py2 50999
-#python3 facloop.py3 50999
-nim c facrec.nim && ./facrec 20
-nim c loop3.nim && ./loop3 100
-nim c -d:release facrec.nim && ./facrec 7
-nim c -d:release loop3.nim && ./loop3 100
+../t pypy loop3.py2 50999
+../t pypy3 loop3.py3 50999
+nim c facrec.nim && ../t ./facrec 20
+nim c loop3.nim && ../t ./loop3 100
+nim c -d:release facrec.nim && ../t ./facrec 7
+nim c -d:release loop3.nim && ../t ./loop3 100
