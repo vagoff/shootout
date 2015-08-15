@@ -72,7 +72,6 @@ language = 'julia'
 function = 'loop3-i64'
 run = 'julia loop3-i64.jl' # [!] compile to static executable! # [!] add an argument!
 
-
 [[measurement]]
 language = 'python'
 implementation = 'pypy2'
