@@ -2,7 +2,7 @@
 cpython2 = 'sudo pacman -S python2'
 cpython3 = 'sudo pacman -S python3'
 pypy2 = 'sudo pacman -S pypy'
-pypy3 'sudo pacman -S pypy3'
+pypy3 = 'sudo pacman -S pypy3'
 ghc = 'sudo pacman -S ghc'
 nim = 'sudo pacman -S nim'
 julia = 'sudo pacmnan -S julia'
