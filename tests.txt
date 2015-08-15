@@ -9,14 +9,14 @@ hs ghc -O3 fac-foldr.hs && ../t ./fac-foldr 50999
 hs ghc -O3 fac-product.hs && ../t ./fac-product 50999
 
 jl ../t julia fac-rec.jl
-jl ../t pypy fac-rec.py 50999
-jl ../t pypy3 fac-rec.py 50999
+py ../t pypy fac-rec.py 50999
+py ../t pypy3 fac-rec.py 50999
 jl ../t julia loop3.jl
 jl ../t julia loop3-i64.jl
-jl ../t pypy loop3.py2 50999
-jl ../t pypy3 loop3.py3 50999
+py ../t pypy loop3.py2 50999
+py ../t pypy3 loop3.py3 50999
 
-nim nim c fac-rec.nim && ../t ./fac-rec 20
-nim nim c loop3.nim && ../t ./loop3 100
-nim nim c -d:release fac-rec.nim && ../t ./fac-rec 7
-nim nim c -d:release loop3-i64.nim && ../t ./loop3 100
+nim nim c fac_rec_i64.nim && ../t ./fac_rec_i64 20
+nim nim c loop3_i64.nim && ../t ./loop3_i64 100
+nim nim c -d:release fac_rec_i64.nim && ../t ./fac_rec_i64 7
+nim nim c -d:release loop3_i64.nim && ../t ./loop3_i64 100
