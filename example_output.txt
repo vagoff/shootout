@@ -1,19 +1,15 @@
-[vag@big18 shootout]$ ./everything.sh
 [
-{ "command": "pypy facloop.py2 50999", "time": 2.38, "memory": 76056 }
-{ "command": "pypy3 facloop.py3 50999", "time": 2.53, "memory": 50228 }
-{ "command": "ghc -O3 facrec.hs && ./facrec 50999", "time": 1.42, "memory": 67532 }
-{ "command": "julia facrec.jl", "time": 14.94, "memory": 87988 }
-{ "command": "pypy facrec.py 50999", "time": 17.67, "memory": 105472 }
-{ "command": "pypy3 facrec.py 50999", "time": 18.70, "memory": 82444 }
-{ "command": "#loop3invalid.jl", "time": 0.00, "memory": 3032 }
-{ "command": "julia loop3.jl", "time": 340.36, "memory": 111304 }
-{ "command": "pypy loop3.py2 50999", "time": 3.28, "memory": 51600 }
-{ "command": "pypy3 loop3.py3 50999", "time": 6.44, "memory": 29452 }
-{ "command": "#python2 facloop.py2 50999", "time": 0.00, "memory": 3032 }
-{ "command": "#python3 facloop.py3 50999", "time": 0.00, "memory": 2976 }
-{ "command": "nim c facrec.nim && ./facrec 20", "time": 1.05, "memory": 32620 },
-{ "command": "nim c loop3.nim && ./loop3 100", "time": 8.18, "memory": 18468 },
-{ "command": "nim c -d:release facrec.nim && ./facrec 20", "time": 2.29, "memory": 40064 },
-{ "command": "nim c -d:release loop3.nim && ./loop3 100", "time": 0.54, "memory": 19496 },
+{ "command": "pypy facloop.py2 50999", "time": 1.85, "memory": 76160 },
+{ "command": "pypy3 facloop.py3 50999", "time": 2.01, "memory": 50276 },
+{ "command": "./facrec 50999", "time": 0.92, "memory": 6064 },
+{ "command": "julia facrec.jl", "time": 14.52, "memory": 87988 },
+{ "command": "pypy facrec.py 50999", "time": 17.60, "memory": 105388 },
+{ "command": "pypy3 facrec.py 50999", "time": 18.48, "memory": 82544 },
+{ "command": "julia loop3.jl", "time": 326.43, "memory": 111736 },
+{ "command": "pypy loop3.py2 50999", "time": 3.10, "memory": 51572 },
+{ "command": "pypy3 loop3.py3 50999", "time": 5.79, "memory": 29516 },
+{ "command": "./facrec 20", "time": 0.00, "memory": 1420 },
+{ "command": "./loop3 100", "time": 7.89, "memory": 1452 },
+{ "command": "./facrec 7", "time": 0.00, "memory": 1372 },
+{ "command": "./loop3 100", "time": 0.20, "memory": 1392 }
 ]
