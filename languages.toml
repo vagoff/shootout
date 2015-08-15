@@ -7,6 +7,7 @@ ghc = 'sudo pacman -S ghc'
 nim = 'sudo pacman -S nim'
 julia = 'sudo pacmnan -S julia'
 sbcl = 'sudo pacman -S sbcl'
+go = 'sudo pacman -S go' # [!] how to install gcc-go simultaneously? they are in conflict!
 
 [ubuntu]
 
