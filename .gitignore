@@ -1,5 +1,6 @@
 shootout.sublime-project
 shootout.sublime-workspace
+_vendor/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
