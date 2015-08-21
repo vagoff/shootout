@@ -7,6 +7,7 @@ hs ghc -O3 fac-rec.hs && ../t ./fac-rec 50999
 hs ghc -O3 fac-rec.hs && ../t ./fac-rec 50999
 hs ghc -O3 fac-foldr.hs && ../t ./fac-foldr 50999
 hs ghc -O3 fac-product.hs && ../t ./fac-product 50999
+hs ghc -O3 map.hs && ./t ./map 1222333
 
 jl ../t julia fac-rec.jl
 py ../t pypy fac-rec.py 50999
