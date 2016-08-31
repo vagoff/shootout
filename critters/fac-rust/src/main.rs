@@ -12,5 +12,5 @@ fn factorial(n: usize) -> BigUint {
 }
 
 fn main() {
-    println!("{}", factorial(1000));
+    println!("{}", factorial(1000000));
 }
