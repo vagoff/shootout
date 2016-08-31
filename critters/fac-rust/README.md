@@ -1,6 +1,7 @@
 Rust bigint
-*How to install/update  Rust to last verrsion:*
+
+**How to install/update  Rust to last verrsion:**
 > make update-rust
 
-*How to build:*
+**How to build:**
 > make
